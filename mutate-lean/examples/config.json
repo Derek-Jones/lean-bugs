@@ -1,0 +1,25 @@
+{
+  "proof_file": "aimeII_2020_p6.lean",
+  "max_processes": 4,
+  "log_dir": "log",
+  "stdout": "progress",
+  "stopping": {
+    "target_accepted": 50,
+    "max_attempts": 500,
+    "max_consecutive_failures": 100,
+    "time_budget_seconds": 28800
+  },
+  "oracle": {
+    "kind": "lean",
+    "lean_command": [
+      "lake",
+      "env",
+      "lean"
+    ],
+    "project_root": "/path/to/a/lake/project/that/requires/mathlib",
+    "timeout_seconds": null
+  },
+  "statement_mutation_fraction": 0.1,
+  "seed": 7,
+  "keep_candidates": false
+}

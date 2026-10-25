@@ -1,0 +1,23 @@
+{
+  "proof_file": "Sample.lean",
+  "max_processes": 4,
+  "log_dir": "log",
+  "stdout": "progress",
+  "stopping": {
+    "target_accepted": 25,
+    "max_attempts": 300,
+    "max_consecutive_failures": 60,
+    "time_budget_seconds": 1800
+  },
+  "oracle": {
+    "kind": "lean",
+    "lean_command": [
+      "lean"
+    ],
+    "project_root": null,
+    "timeout_seconds": null
+  },
+  "statement_mutation_fraction": 0.1,
+  "seed": 7,
+  "keep_candidates": false
+}

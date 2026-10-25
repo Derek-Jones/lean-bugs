@@ -1,0 +1,19 @@
+{
+  "proof_file": "CoreCycle.lean",
+  "max_processes": 4,
+  "log_dir": "log",
+  "stdout": "progress",
+  "stopping": {
+    "target_accepted": 40,
+    "max_attempts": 400,
+    "max_consecutive_failures": 150,
+    "time_budget_seconds": 1800
+  },
+  "oracle": {
+    "kind": "beam",
+    "beam_command": "lean-beam",
+    "project_root": ".",
+    "timeout_seconds": null
+  },
+  "seed": 11
+}
